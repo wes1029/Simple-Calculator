@@ -1,0 +1,29 @@
+
+#include <stdio.h>
+
+int main() {
+    
+    char operator;
+    float fnum1, fnum2, fans;
+    
+printf("Enter first number: ");
+scanf("%f", &fnum1);
+printf("Enter operator:");
+scanf(" %c", &operator);
+printf("Enter second number: ");
+scanf("%f", &fnum2);    
+    
+
+if (operator == '+'){
+    fans = fnum1 + fnum2;
+} else if (operator == '-'){
+    fans = fnum1 - fnum2;
+} else if (operator == '*'){
+    fans = fnum1 * fnum2;
+} else if (operator == '/'){
+    fans = fnum1 / fnum2;
+}
+printf("Result: %.2f", fans); 
+    
+    return 0;
+}
